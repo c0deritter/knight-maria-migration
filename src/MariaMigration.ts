@@ -1,23 +1,5 @@
 import { Pool } from 'mariadb'
 
-// abstract class SqlConnection {
-//   abstract query(sql: string, parameter?: any[]): Promise<any>[]
-// }
-
-// class MariaConnection extends SqlConnection {
-
-//   pool: Pool
-
-//   constructor(pool: Pool) {
-//     super()
-//     this.pool = pool
-//   }
-//   query(sql: string, parameter?: any[]): Promise<any[]> {
-//     return this.pool.query(sql, parameter)
-//   }
-// }
-
-
 export default abstract class MariaMigration {
 
   pool: Pool

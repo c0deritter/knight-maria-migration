@@ -1,26 +1,26 @@
-# Knight PostgreSQL Migration by Coderitter
+# Knight Maria Migration by Coderitter
 
-A database schema migration lib for PostgreSQL.
+A database schema migration lib for MariaDB.
 
 ## Related packages
 
 There is an SQL package [knight-sql](https://github.com/c0deritter/knight-sql) which helps with building SQL strings. It can be combined with [knight-criteria](https://github.com/c0deritter/knight-criteria) and [knight-sql-criteria-filler](https://github.com/c0deritter/knight-sql-criteria-filler). If you are looking for a more sophisticated version for database access you can also use [knight-orm](https://github.com/c0deritter/knight-orm).
 
-Another helpful PostgreSQL tool is [knight-pg-transaction](https://github.com/c0deritter/knight-pg-transaction).
+Another helpful MariaDB tool is [knight-maria-transaction](https://github.com/c0deritter/knight-maria-transaction).
 
 ## Install
 
-`npm install knight-pg-migration`
+`npm install knight-maria-migration`
 
 ## Overview
 
 ### The migration
 
 ```typescript
-import { PostgresMigration } from 'knight-pg-migration'
-import { Pool } from 'pg'
+import { MariaMigration } from 'knight-maria-migration'
+import { Pool } from 'mariadb'
 
-class DbMigration extends PostgresMigration {
+class DbMigration extends MariaMigration {
 
     constructor(pool: Pool) {
         super(pool)

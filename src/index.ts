@@ -1,1 +1,1 @@
-export { default as PostgresMigration } from './PgMigration'
+export { default as MariaMigration } from './MariaMigration'

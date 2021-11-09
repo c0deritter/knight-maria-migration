@@ -1,7 +1,7 @@
 {
-  "name": "knight-pg-migration",
-  "version": "1.1.0",
-  "description": "A database schema migration lib for PostgreSQL",
+  "name": "knight-maria-migration",
+  "version": "0.0.1",
+  "description": "A database schema migration lib for MariaDB",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "files": [
@@ -21,16 +21,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/c0deritter/knight-pg-migration.git"
+    "url": "git+https://github.com/c0deritter/knight-maria-migration.git"
   },
   "keywords": [
     ""
   ],
   "author": "Coderitter GmbH",
   "bugs": {
-    "url": "https://github.com/c0deritter/knight-pg-migration/issues"
+    "url": "https://github.com/c0deritter/knight-maria-migration/issues"
   },
-  "homepage": "https://github.com/c0deritter/knight-pg-migration#readme",
+  "homepage": "https://github.com/c0deritter/knight-maria-migration#readme",
   "dependencies": {
     "@types/mysql": "^2.15.19",
     "knight-log": "^1.0.6",
