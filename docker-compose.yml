@@ -1,0 +1,17 @@
+version: '3.7'
+services:
+  test:
+    image: 'node'
+    command: bash -c 'npm install && npx mocha -r ts-node/register "test/**/*.test.ts"'
+    working_dir: '/hostdir'
+    volumes:
+      - './:/hostdir'
+    depends_on: 
+      - db
+  db:
+    image: 'mariadb'
+    environment:
+      - MYSQL_PASSWORD=migration_test
+      - MARIADB_ROOT_PASSWORD=migration_test
+      - MYSQL_DATABASE=migration_test
+      - MYSQL_USER=migration_test
